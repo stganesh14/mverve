@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Sample</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="mverve">
+            <h2>Welcome<br>to</h2><br><br>
+            <h1>Mverve</h1>
+            <caption>Inspired Applications</caption><br><br><br>
+            <p>To connect with us<br>Please enter the details</p>
+        </div>
+        <div id="form">
+            <h1 id="heading">Create an account</h1><br>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label for="Firstname">First Name</label></td>
+                        <td><label for="lastname">Last Name</label></td>
+                        <td><label for="Age">Age</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="First Name" name="fname" required></td>
+                        <td><input type="text" placeholder="Last Name" name="lname" required></td>
+                        <td><input type="number" min="18" max="100" placeholder="18-100" name="age" required></td><br>
+                    </tr>
+                    <tr>
+                        <td><label for="Mobilenumber">Mobile Number</label></td>
+                        <td><label for="Email">Email</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="tel" pattern="[0-9]{10}" placeholder="xxxxx xxxxx" name="number" required> </td>
+                        <td><input type="email" placeholder="abc@xxx.zzz" name="email" required></td><br>
+                    </tr>
+                    <tr>
+                        <td><label for="Description">Description</label></td>
+                    </tr>
+                </table>
+                <textarea name="desc" id="descr" cols="75" rows="5" maxlength="150" required></textarea><br>
+                <table>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><label for="confirmpassword">Confirm Password</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" value="" id="password"><input type="checkbox" onclick="myFunction()" name="password" required>Show Password</td>
+                        <td><input type="password" value="" id="password"><input type="checkbox" onclick="myFunction()" name="confirmpassword" required>Show Password</td><br>
+                    </tr>
+                </table>
+                <input id="reset" type="reset">
+                <input id="submit" type="submit">
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
