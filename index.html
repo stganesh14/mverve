@@ -16,7 +16,7 @@
         </div>
         <div id="form">
             <h1 id="heading">Create an account</h1><br>
-            <form action="">
+            <form name="myForm" action="" onsubmit="validateForm()">
                 <table>
                     <tr>
                         <td><label for="Firstname">First Name</label></td>
@@ -47,8 +47,8 @@
                         <td><label for="confirmpassword">Confirm Password</label></td>
                     </tr>
                     <tr>
-                        <td><input type="password" value="" id="password"><input type="checkbox" onclick="myFunction()" name="password" required>Show Password</td>
-                        <td><input type="password" value="" id="password"><input type="checkbox" onclick="myFunction()" name="confirmpassword" required>Show Password</td><br>
+                        <td><input type="password" value="" id="password" name="pass"><input type="checkbox" onclick="myFunction()" name="password" required>Show Password</td>
+                        <td><input type="password" value="" id="cpassword" name="cpass"><input type="checkbox" onclick="myFunction2()" name="confirmpassword" required>Show Password</td><br>
                     </tr>
                 </table>
                 <input id="reset" type="reset">
@@ -57,3 +57,4 @@
         </div>
         <script src="script.js"></script>
     </body>
+</html>
