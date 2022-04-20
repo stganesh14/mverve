@@ -24,7 +24,7 @@ function validateForm() {
   let a = document.forms["myForm"]["pass"].value;
   let b = document.forms["myForm"]["cpass"].value;
   if (a != b) {
-    alert("password and confirm must be same");
+    alert("password and confirm password must be same");
     return false;
   }
 }
